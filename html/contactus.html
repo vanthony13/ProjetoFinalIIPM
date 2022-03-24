@@ -1,0 +1,72 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+
+  <body>
+  <title>Documentos CSS1</title>
+  <link rel="stylesheet" type="text/css" href="css/contactus.css">
+</head>
+
+<div class="navbar">
+  
+  <div ul class="dropdown">
+      <button class="dropbtn">Family<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="intchat.html">Chat(internal)</a>
+        <a href="extchat.html">Chat(external)</a>
+        <a href="members.html">Members</a>    
+        <a href="contactus.html">Contact us</a>
+      </div>
+  </div>
+    <a  href="project.html">Home Page</a>
+     <div ul class="dropdown">
+      <button class="dropbtn">Activities<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="calendar.html">Family-Calendar</a>
+        <a href="todolist.html">To do list</a>
+        <a href="foodmenu.html">Food Menu</a>
+        <a href="workout.html">Workout Table</a>
+        <a href="Events.html">Events</a>
+      </div>
+  </div>
+  
+    <div class="right">
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i>search</button>
+      </form>
+    </div>
+</div>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images/bv.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" class="xname" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text"  class="xname" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input class="llname" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

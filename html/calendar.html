@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Calendar</title>
+
+
+<link rel="stylesheet" href="css/calendar.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body style="background:#333">
+
+
+<div class="navbar">
+  
+  <div ul class="dropdown">
+      <button class="dropbtn">Family<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="intchat.html">Chat(internal)</a>
+        <a href="extchat.html">Chat(external)</a>
+        <a href="members.html">Members</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+  </div>
+    <a  href="project.html">Home Page</a>
+     <div ul class="dropdown">
+      <button class="dropbtn">Activities<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="calendar.html">Family-Calendar</a>
+        <a href="todolist.html">To do list</a>
+        <a href="foodmenu.html">Food Menu</a>
+        <a href="workout.html">Workout Table</a>
+         <a href="events.html">Events</a>
+      </div>
+  </div>
+  
+    <div class="right">
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i>search</button>
+      </form>
+    </div>
+</div>	
+
+<!-- SCHEDULE -->
+<button class="but" onclick='document.getElementById("sch").style.display="block"'>Add Schedule</button> <button class="but2" onclick='document.getElementById("sch").style.display="none"'><i>Delete Schedule</button>
+<div id="sch">
+     <section class="schedule section" id="schedule">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center">
+                               
+
+                                <div class="fc"><h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Family Calendar</h2></div>
+                             </div>
+
+                             <div class="col-lg-12 py-5 col-md-12 col-12">
+                                 <p class="table" ><table class="table table-bordered table-responsive schedule-table"  data-aos="fade-up" data-aos-delay="300">
+
+                                     <thead class="thead-light">
+                                         <th><i class="fa fa-calendar"></i></th>
+                                         <th>Mon</th>
+                                         <th>Tue</th>
+                                         <th>Wed</th>
+                                         <th>Thu</th>
+                                         <th>Fri</th>
+                                         <th>Sat</th>
+                                     </thead>
+
+                                     <tbody>
+                                         <tr>
+                                            <td><small>7:00 am</small></td>
+                                            <td>
+                                                <strong>William-School</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                            <td>
+                                                <strong>William-School</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>William-School</strong>
+                                                <span>7:00 am - 9:00 am</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>9:00 am</small></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Vivy-Gym</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                            <td>
+                                                <strong>Nanny-Balé</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>william-Football</strong>
+                                                <span>8:00 am - 9:00 am</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>11:00 am</small></td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Vivy-Study</strong>
+                                                <span>11:00 am - 2:00 pm</span>
+                                            </td>
+                                            <td>
+                                                <strong>Kids-study</strong>
+                                                <span>11:30 am - 3:30 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Kids-study</strong>
+                                                <span>11:50 am - 5:20 pm</span>
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>2:00 pm</small></td>
+                                            <td>
+                                                <strong>Kids-School</strong>
+                                                <span>2:00 pm - 4:00 pm</span>
+                                            </td>
+                                            <td>
+                                                <strong>Family-Beach</strong>
+                                                <span>3:00 pm - 6:00 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Vivy-Dance</strong>
+                                                <span>6:00 pm - 9:00 pm</span>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <strong>Willy-Crossfit</strong>
+                                                <span>5:00 pm - 7:00 pm</span>
+                                            </td>
+                                         </tr>
+                                     </tbody>
+                                 </table></p>
+                             </div>
+
+                    </div>
+               </div>
+     </section>
+ </div>
+

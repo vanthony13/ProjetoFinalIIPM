@@ -1,0 +1,246 @@
+.members{
+	background: #964f4b;
+	padding-bottom: 40px;
+}
+
+.members p{
+	font-size: 35px;
+	color: white;
+	text-align: center;
+  font-family: "Sofia", sans-serif;
+}
+
+.bar p{
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  color: white;
+
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body, html {
+    
+    margin:0px;
+    background-image: url("images/famt.jpg");
+    background-size: 100% 100%;
+}
+
+.right{
+  float:right;
+}
+.navbar input[type=text]{
+  
+  padding: 6px;
+  
+  margin-top: 8px;
+  
+  font-size: 17px;
+  border:none;
+}
+
+.right button{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #2196f3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.right button:hover{
+  background-color:black;
+  color:white;
+}
+
+* {
+margin: 0;
+padding: 0;
+font-family:sans-serif,Arial;
+font-size:10pt;
+}
+.tree {
+white-space: nowrap;
+min-width: 800px;
+min-height:500px;
+}
+.tree ul {
+padding-top: 20px;
+position: relative;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+.tree li {
+float: left;
+text-align: center;
+list-style-type: none;
+position: relative;
+padding: 20px 5px 0 5px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+/*We will use ::before and ::after to draw the connectors*/
+.tree li::before, .tree li::after {
+content: '';
+position: absolute;
+top: 0;
+right: 50%;
+border-top: 1px solid black;
+width: 50%;
+height: 20px;
+}
+.tree li::after {
+right: auto;
+left: 50%;
+border-left: 1px solid black;
+}
+/*We need to remove left-right connectors from elements without any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+display: none;
+}
+/*Remove space from the top of single children*/
+.tree li:only-child {
+padding-top: 0;
+}
+/*Remove left connector from first child and right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after {
+border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before {
+border-right: 1px solid black;
+border-radius: 0 5px 0 0;
+-webkit-border-radius: 0 5px 0 0;
+-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after {
+border-radius: 5px 0 0 0;
+-webkit-border-radius: 5px 0 0 0;
+-moz-border-radius: 5px 0 0 0;
+}
+/*Time to add downward connectors from parents*/
+.tree ul ul::before {
+content: '';
+position: absolute;
+top: 0;
+left: 50%;
+border-left: 1px solid black;
+width: 0;
+height: 20px;
+}
+.tree li div {
+border: 1px solid black;
+padding: 5px 10px;
+text-decoration: none;
+color: #666;
+font-family: arial, verdana, tahoma;
+font-size: 11px;
+display: inline-block;
+min-width: 80px;
+min-height: 30px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+.tree li div .male {
+background-color:lightblue;
+display: inline-block;
+width:90px;
+padding:10px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+.tree li div .female {
+background-color:lightpink;
+display: inline-block;
+width:90px;
+padding:10px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+.tree li div .spacer {
+background-color:lightblue;
+display: inline-block;
+width:10px;
+}
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li div:hover, .tree li div:hover + ul li div {
+background: gray;
+color: #000;
+border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li div:hover + ul li::after,
+.tree li div:hover + ul li::before,
+.tree li div:hover + ul::before,
+.tree li div:hover + ul ul::before {
+border-color: #94a0b4;
+}

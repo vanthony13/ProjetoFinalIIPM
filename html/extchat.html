@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/extchat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="navbar2">
+  
+  <div ul class="dropdown2">
+      <button class="dropbtn">Family <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown2-content">
+        <a href="intchat.html">Chat(internal)</a>
+        <a href="#">Chat(external)</a>
+        <a href="members.html">Members</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+  </div>
+    <a  href="project.html">Home Page</a>
+     <div ul class="dropdown2">
+      <button class="dropbtn">Activities <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown2-content">
+        <a href="calendar.html">Family-Calendar</a>
+        <a href="todolist.html">To do list</a>
+        <a href="foodmenu.html">Food Menu</a>
+        <a href="workout.html">Workout Table</a>
+        <a href="Events.html">Events</a>
+      </div>
+  </div>
+  
+    <div class="right2">
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i> search</button>
+      </form>
+    </div>
+</div>
+
+
+<div class="bar">
+  
+  <div ul class="dropdown">
+      <button class="dropbtn"><i class="fa fa-phone"></i></button>
+  </div>
+    <div ul class="dropdown">
+      <button class="dropbtn"><i class="fa fa-user"></i></button>
+  </div>
+     <div ul class="dropdown">
+      <button class="dropbtn"><i class="fa fa-video-camera"></i></button>
+  </div>
+
+  
+
+  
+   
+  
+  <div  ul class="drop">
+   <button class="dropbtn"><i class="fa fa-cog"></i></button>
+  </div>
+
+ <div ul class="drop">
+      <button class="dropbtn"><i class="fa fa-info"></i></button>
+      <div class="drop-content">
+        <a href="media.html">Media</a>
+        <a href="intchat.html">Change Chat</a>
+        <a href="#">Hide message</a>
+        <a href="#">Nicknames</a>
+      </div>
+
+
+  </div>
+
+  <p class="h2"><b>Messages</b></p>
+  
+
+    
+</div>
+
+ 
+
+<h1>Chat </h1>
+<div class="message">
+<img class="profilePic" src="images/avatar.png">
+
+<p><b><sup>Medina Family:Samuel</sup></b> <br>Hello. How are your holidays going?</p>
+<span class="timeStampRight">9:00</span>
+</div>
+<div class="message darker">
+<img class="profilePic2" src="images/avatar.png">
+<p><b><sup>Collin Family:Samuel</sup></b><br>They are going pretty good.Thanks for asking!</p>
+<span class="timeStampLeft">9:05</span>
+</div>
+<div class="message2">
+<img class="profilePic" src="images/avatar.png">
+<p><b><sup>Jane Family:Samuel</sup></b><br>Hey hmm are you planning on visiting somewhere in holidays?</p>
+<span class="timeStampRight">9:07</span>
+</div>
+<div class="message darker2">
+<img class="profilePic2" src="images/avatar.png">
+<p><b><sup>Collin Family:Samuel</sup></b><br>Yes! Thinking of going to Disneyland. By the way i was thinking you could come with me you know. It would be fun.</p>
+<span class="timeStampLeft">9:10</span>
+</div>
+<div class="message3">
+<img class="profilePic" src="images/avatar.png">
+<p><b><sup>Medina Family:Samuel</sup></b><br>Dude for real?</p>
+<span class="timeStampRight">9:12</span>
+</div><br><br>
+
+<div id="Demo">
+<img class="profilePic3" src="images/avatar.png" " style="width: 20%">
+
+<p id="demo"> </p>
+</div>
+
+
+
+  <div class="navbar">
+  
+  <div ul class="dropdown">
+      <button class="dropbtn"><i class="fa fa-camera"></i></button>
+  </div>
+    <div ul class="dropdown">
+      <button class="dropbtn"><i class="fa fa-paperclip"></i></button>
+  </div>
+     <div ul class="dropdown">
+      <button class="dropbtn"><i class="fa fa-microphone"></i></button>
+  </div>
+
+  <div ul class="dropdown">
+      <button class="dropbtn"> &#128515;</button>
+  </div>
+  
+    <div class="right">
+      
+        <input type="text" id="text" placeholder="Send.." name="send">
+         <button onclick="myFunction()">send</button> 
+      
+    </div>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("text").value;
+  var y= document.getElementById("Demo").style;
+  document.getElementById("demo").innerHTML = x;
+
+  if (x==="") {
+      document.getElementById("Demo").style.display="none";
+  } else {
+   document.getElementById("Demo").style.display="flex";
+  }
+}
+</script>
+</div>
+
+<!-- Load icon library -->
+
+
+<!-- The form -->
+
+</body>
+</html>
